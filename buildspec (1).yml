@@ -12,7 +12,7 @@ phases:
       - echo "Installing dependencies..."
       - yum update -y
       - yum install -y docker
-      - service docker start
+      - systemctl start docker
       - echo "Docker installed successfully!"
   pre_build:
     commands:
